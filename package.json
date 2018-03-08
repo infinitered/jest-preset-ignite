@@ -1,0 +1,29 @@
+{
+  "name": "jest-preset-ignite",
+  "version": "0.1.0",
+  "description": "Jest preset for handling TypeScript on a React Native project.",
+  "license": "MIT",
+  "author": "Steve Kellock <steve@kellock.ca>",
+  "repository": "infinitered/jest-preset-ignite",
+  "homepage": "https://github.com/infinitered/jest-preset-ignite",
+  "bugs": "https://github.com/infinitered/jest-preset-ignite/issues",
+  "files": [
+    "jest-preset.json",
+    "preprocessor.js",
+    "README.md"
+  ],
+  "keywords": [ 
+    "jest", 
+    "jest-preset", 
+    "typescript", 
+    "react-native" 
+  ],
+  "peerDependencies": {
+    "react-native": "^0.53.0",
+    "jest": "^22.4.2",
+    "typescript": "^2.7.2"
+  },
+  "devDependencies": {
+    "prettier": "^1.11.1"
+  }
+}
