@@ -1,17 +1,3 @@
-// OVERVIEW
-//
-//   Converts JS into TS within a react-native project.
-//
-// PRIOR ART
-//
-//   Thanks to https://github.com/petester42/jest-preset-typescript-react-native.
-//   This library pretty much outline how to make this work.
-//
-//   Unfortunately it's been abandoned.
-//
-//
-// ----------------------------------------------------------------------------
-
 // typescript compiler
 const tsc = require("typescript")
 
