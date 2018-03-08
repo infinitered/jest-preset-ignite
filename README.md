@@ -25,7 +25,7 @@ Then open your `package.json` and change the `jest` section to use this preset.
 
 ```json
   "jest": {
-    "preset": "ignite"
+    "preset": "jest-preset-ignite"
   }
 ```
 
