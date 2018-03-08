@@ -29,14 +29,45 @@ Then open your `package.json` and change the `jest` section to use this preset.
   }
 ```
 
-## PRIOR ART
+## Prior Art
 
 Thanks to https://github.com/petester42/jest-preset-typescript-react-native for showing me how this is done.
 
 That project appears to be no longer active, so this picks up from there.
 
+## TypeScript Compiler Settings
+
+This will use it's own "`tsconfig.json`" and not the one from your project.
+
+Here's a brief explanation on the compiler settings used. This WILL be on the test!
+
+```js
+{
+  // We are able to target something higher because whatever we emit
+  // will still be run through ye olde babel.
+  target: "es6",
+
+  // We are running this within node, so commonjs is our only option (for now!)
+  module: "commonjs",
+
+  // I believe that `react-native` is more for historical reasons. This works.
+  jsx: "react",
+
+  // This is not something we can escape at the moment unfortunately. Some libraries
+  // (such as react-native-i18n, moment, validate.js) have their typings already using
+  // the broken way.
+  allowSyntheticDefaultImports: true,
+
+  // Related to the option above, and new in TypeScript 2.7, this furthers support for the
+  // broken way to import default modules.
+  esModuleInterop: true,
+
+  // Let's jam our sourcemaps directly into the code.  This allows line numbers for
+  // both .ts and .tsx to work.
+  inlineSourceMap: true,
+}
+```
 
 ## License
 
 MIT
-
