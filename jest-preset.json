@@ -30,11 +30,12 @@
     "js",
     "jsx",
     "ts",
-    "tsx"
+    "tsx",
+    "json"
   ],
   "transform": {
     "^.+\\.(js|jsx)$": "<rootDir>/node_modules/babel-jest",
-    "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/jest-preset-typescript-react-native/preprocessor.js"
+    "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/jest-preset-ignite/preprocessor.js"
   },
   "testMatch": [
     "**/__tests__/**/*.js?(x)",
