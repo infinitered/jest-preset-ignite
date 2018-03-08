@@ -45,7 +45,7 @@ Here's a brief explanation on the compiler settings used. This WILL be on the te
 {
   // We are able to target something higher because whatever we emit
   // will still be run through ye olde babel.
-  target: "es6",
+  target: "es2017",
 
   // We are running this within node, so commonjs is our only option (for now!)
   module: "commonjs",
