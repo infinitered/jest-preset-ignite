@@ -3,7 +3,7 @@ const tsc = require("typescript")
 
 // typescript configuration
 const compilerOptions = {
-  target: "es6",
+  target: "es2017",
   module: "commonjs",
   jsx: "react",
   allowSyntheticDefaultImports: true,
