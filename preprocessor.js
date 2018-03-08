@@ -20,15 +20,19 @@ const compilerOptions = {
  */
 function process(src, path) {
   // we only convert .ts and .tsx files
-  if (!path.endsWith(".ts") || !path.endsWith(".tsx")) {
-    return src
+  if (path.endsWith(".ts") || path.endsWith(".tsx")) {
+    // compile TS to JS
+    const transpiled = tsc.transpileModule(src, {
+      compilerOptions: compilerOptions,
+      fileName: path,
+    })
+
+    // send back the JS
+    return transpiled.outputText
   }
 
-  // compile TS to JS
-  var transpiled = tsc.transpileModule(src, { compilerOptions: compilerOptions, fileName: path })
-
-  // send back the JS
-  return transpiled.outputText
+  // don't modify it, just hand it back
+  return src
 }
 
 // make the pre-processor available to jest
