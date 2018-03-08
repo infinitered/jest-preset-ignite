@@ -1,6 +1,6 @@
 {
   "name": "jest-preset-ignite",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Jest preset for handling TypeScript on a React Native project.",
   "license": "MIT",
   "author": "Steve Kellock <steve@kellock.ca>",
