@@ -8,7 +8,7 @@ const compilerOptions = {
   jsx: "react",
   allowSyntheticDefaultImports: true,
   esModuleInterop: true,
-  inlineSourceMap: true,
+  sourceMap: true
 }
 
 /**
@@ -24,11 +24,14 @@ function process(src, path) {
     // compile TS to JS
     const transpiled = tsc.transpileModule(src, {
       compilerOptions: compilerOptions,
-      fileName: path,
+      fileName: path
     })
 
-    // send back the JS
-    return transpiled.outputText
+    // give Jest the js and source map
+    return {
+      code: transpiled.outputText,
+      map: transpiled.sourceMapText
+    }
   }
 
   // don't modify it, just hand it back
