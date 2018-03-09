@@ -29,11 +29,8 @@ Then open your `package.json` and change the `jest` section to use this preset.
   }
 ```
 
-## Prior Art
-
-Thanks to https://github.com/petester42/jest-preset-typescript-react-native for showing me how this is done.
-
-That project appears to be no longer active, so this picks up from there.
+You will also need a `test/setup.ts` file. This will be run first when the test
+environment boots up. You can use this for any custom mocks or setup.
 
 ## TypeScript Compiler Settings
 
@@ -62,11 +59,16 @@ Here's a brief explanation on the compiler settings used. This WILL be on the te
   // broken way to import default modules.
   esModuleInterop: true,
 
-  // Let's jam our sourcemaps directly into the code.  This allows line numbers for
-  // both .ts and .tsx to work.
-  inlineSourceMap: true,
+  // Let TypeScript's compiler know we'll be needing source maps.
+  sourceMap: true
 }
 ```
+
+## Prior Art
+
+Thanks to https://github.com/petester42/jest-preset-typescript-react-native for showing me how this is done.
+
+That project appears to be no longer active, so this picks up from there.
 
 ## License
 
