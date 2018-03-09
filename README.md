@@ -6,12 +6,12 @@ Converts JS into TS within a react-native project.
 
 Version 1.x of this library supports the following configuration.
 
-| Library      | Version   |
-| ------------ | --------- |
-| Jest         | 22.4.x    |
-| React Native | 0.53.x    |
-| TypeScript   | 2.7.2     |
-| Node JS      | 8.x & 9.x |
+| Library      | Version |
+| ------------ | ------- |
+| Jest         | 22.4+   |
+| React Native | 0.53+   |
+| TypeScript   | 2.7+    |
+| Node JS      | 8+      |
 
 It may work on other version, but I haven't tested this.
 
