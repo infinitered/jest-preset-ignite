@@ -19,7 +19,7 @@
     "<rootDir>/node_modules/react-native/packager/"
   ],
   "transformIgnorePatterns": [
-    "node_modules/(?!(jest-)?react-native|react-clone-referenced-element|react-native)"
+    "node_modules/(?!(jest-)?react-native|react-clone-referenced-element|react-native|react-navigation)"
   ],
   "setupFiles": [
     "<rootDir>/node_modules/react-native/jest/setup.js",
