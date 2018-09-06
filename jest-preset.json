@@ -8,7 +8,8 @@
     ],
     "providesModuleNodeModules": [
       "react-native"
-    ]
+    ],
+    "hasteImplModulePath": "<rootDir>/node_modules/react-native/jest/hasteImpl.js"
   },
   "moduleNameMapper": {
     "^[./a-zA-Z0-9$_-]+\\.(bmp|gif|jpg|jpeg|png|psd|svg|webp|ttf|otf)$": "RelativeImageStub",
