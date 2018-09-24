@@ -8,15 +8,15 @@
     ],
     "providesModuleNodeModules": [
       "react-native"
-    ]
+    ],
+    "hasteImplModulePath": "<rootDir>/node_modules/react-native/jest/hasteImpl.js"
   },
   "moduleNameMapper": {
     "^[./a-zA-Z0-9$_-]+\\.(bmp|gif|jpg|jpeg|png|psd|svg|webp|ttf|otf)$": "RelativeImageStub",
     "^React$": "<rootDir>/node_modules/react"
   },
   "modulePathIgnorePatterns": [
-    "<rootDir>/node_modules/react-native/Libraries/react-native/",
-    "<rootDir>/node_modules/react-native/packager/"
+    "<rootDir>/node_modules/react-native/Libraries/react-native/"
   ],
   "transformIgnorePatterns": [
     "node_modules/(?!(jest-)?react-native|react-clone-referenced-element|react-native|react-navigation)"
@@ -34,7 +34,7 @@
     "json"
   ],
   "transform": {
-    "^.+\\.(js|jsx)$": "<rootDir>/node_modules/babel-jest",
+    "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js",
     "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/jest-preset-ignite/preprocessor.js"
   },
   "testMatch": [
