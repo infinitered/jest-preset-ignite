@@ -8,7 +8,7 @@ Version 0.6 of this library supports:
 
 | Library      | Version    |
 | ------------ | ---------- |
-| Jest         | 23.x       |
+| Jest         | 23.6.x     |
 | React Native | 0.56, 0.57 |
 | TypeScript   | 3.x        |
 | Node JS      | 8+         |
