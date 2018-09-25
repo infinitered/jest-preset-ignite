@@ -4,14 +4,23 @@ Converts JS into TS within a react-native project.
 
 ## Version Supported
 
-Version 1.x of this library supports the following configuration.
+Version 0.6 of this library supports:
 
-| Library      | Version |
-| ------------ | ------- |
-| Jest         | 22.4+   |
-| React Native | 0.53+   |
-| TypeScript   | 2.7+    |
-| Node JS      | 8+      |
+| Library      | Version    |
+| ------------ | ---------- |
+| Jest         | 23.x       |
+| React Native | 0.56, 0.57 |
+| TypeScript   | 3.x        |
+| Node JS      | 8+         |
+
+Version 0.5 of this library supports the following configuration:
+
+| Library      | Version          |
+| ------------ | ---------------- |
+| Jest         | 22.x             |
+| React Native | 0.53, 0.54, 0.55 |
+| TypeScript   | 2.7.x - 2.9.x    |
+| Node JS      | 8+               |
 
 It may work on other version, but I haven't tested this.
 
