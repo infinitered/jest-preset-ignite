@@ -20,7 +20,7 @@
   ],
   "peerDependencies": {
     "react-native": ">=0.56.0",
-    "jest": "^23.6",
+    "jest": "^24.7",
     "typescript": "^3"
   },
   "devDependencies": {
