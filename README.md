@@ -2,6 +2,8 @@
 
 Converts JS into TS within a react-native project.
 
+Originally built by [Infinite Red](https://infinite.red), a U.S.-based web and mobile development company.
+
 ## Version Supported
 
 Version 0.6 of this library supports:
